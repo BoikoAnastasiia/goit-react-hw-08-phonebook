@@ -12,8 +12,6 @@ import {
   fetchContactsError,
 } from './contacts-actions';
 
-axios.defaults.baseURL = 'http://localhost:4041';
-
 const fetchContacts = () => async dispatch => {
   dispatch(fetchContactsRequest());
 
