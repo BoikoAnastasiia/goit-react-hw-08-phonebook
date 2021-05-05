@@ -2,7 +2,7 @@
   "name": "2_2_homework",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://anastasyah86.github.io/goit-react-hw-07-phonebook/",
+  "homepage": "https://anastasyah86.github.io/goit-react-hw-08-phonebook/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.5.1",
     "@testing-library/jest-dom": "^5.11.10",
@@ -17,12 +17,9 @@
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
     "redux-persist": "^6.0.0",
-    "uuid": "^8.3.2",
-    "uuidv4": "^6.2.7",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
-    "api-server": "json-server --port 4041 --watch db.json",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",

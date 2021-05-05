@@ -1,1 +1,1 @@
-Form in React Goit homework
+Authorization and registration in React Goit homework
