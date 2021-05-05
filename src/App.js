@@ -2,8 +2,10 @@ import Container from './Components/Container';
 import { Component, Suspense, lazy } from 'react';
 import AppBar from './Components/AppBar/AppBar';
 import PrivateRoute from './Components/Routes/PrivateRoute';
-import PublicRoute from './components/Routes/PublicRoute';
+import PublicRoute from './Components/Routes/PublicRoute';
+import { authOperations } from './redux/auth';
 import { connect } from 'react-redux';
+import { Switch } from 'react-router-dom';
 
 const HomeView = lazy(() => import('./views/HomeView'));
 const RegisterView = lazy(() => import('./views/RegisterView'));
@@ -12,7 +14,7 @@ const ContactsView = lazy(() => import('./views/ContactsView'));
 
 class App extends Component {
   componentDidMount() {
-    this.props.onGetCurretnUser();
+    this.props.onGetCurrentUser();
   }
 
   render() {
@@ -26,16 +28,16 @@ class App extends Component {
               path="/register"
               component={RegisterView}
               restricted
-              redirectTo="/todos"
+              redirectTo="/contacts"
             />
             <PublicRoute
               path="/login"
               restricted
               component={LoginView}
-              redirectTo="/todos"
+              redirectTo="/contacts"
             />
             <PrivateRoute
-              path="/todos"
+              path="/contacts"
               component={ContactsView}
               redirectTo="/login"
             />
@@ -47,7 +49,7 @@ class App extends Component {
 }
 
 const mapDispatchToProps = {
-  onGetCurretnUser: authOperations.getCurrentUser,
+  onGetCurrentUser: authOperations.getCurrentUser,
 };
 
 export default connect(null, mapDispatchToProps)(App);

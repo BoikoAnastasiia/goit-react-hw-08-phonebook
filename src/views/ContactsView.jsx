@@ -1,13 +1,13 @@
 import { Component } from 'react';
 import { connect } from 'react-redux';
-import Container from '../components/Container';
+import Container from '../Components/Container';
 import PhoneBookForm from '../Components/PhoneBookForm';
 import Search from '../Components/Search';
 import ContactsList from '../Components/ContactsList';
 
 import { contactsOperations, contactsSelectors } from '../redux/contacts';
 
-class TodosView extends Component {
+class ContactView extends Component {
   componentDidMount() {
     this.props.fetchContacts();
   }
@@ -24,11 +24,11 @@ class TodosView extends Component {
 }
 
 const mapStateToProps = state => ({
-  isLoadingTodos: contactsSelectors.getLoading(state),
+  isLoadingContacts: contactsSelectors.getLoading(state),
 });
 
 const mapDispatchToProps = dispatch => ({
-  fetchTodos: () => dispatch(contactsOperations.fetchTodos()),
+  fetchContacts: () => dispatch(contactsOperations.fetchContacts()),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(TodosView);
+export default connect(mapStateToProps, mapDispatchToProps)(ContactView);
