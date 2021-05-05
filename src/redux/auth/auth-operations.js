@@ -1,7 +1,5 @@
-import { createAction } from '@reduxjs/toolkit';
 import axios from 'axios';
 import authActions from './auth-actions';
-import authReducer from './auth-reducer';
 
 axios.defaults.baseURL = 'https://connections-api.herokuapp.com';
 
@@ -25,8 +23,6 @@ const register = credentials => async dispatch => {
 
   try {
     const response = await axios.post('/users/signup', credentials);
-    console.log(response);
-
     token.set(response.data.token);
 
     dispatch(authActions.registerSuccess(response.data));
@@ -77,9 +73,9 @@ const logOut = () => async dispatch => {
  * headers:
  *    Authorization: Bearer token
  *
- * 1. Забираем токен из стейта через getState()
- * 2. Если токена нет, выходим не выполняя никаких операций
- * 3. Если токен есть, добавляет его в HTTP-заголовок и выполянем операцию
+ * 1. Take a token from the state through getState()
+ * 2. If the token doesn't exist we exit not doing any of the operations
+ * 3. If token exists we add it to its HTTP-header and run the operation
  */
 const getCurrentUser = () => async (dispatch, getState) => {
   const {
