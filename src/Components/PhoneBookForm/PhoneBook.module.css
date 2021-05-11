@@ -15,16 +15,15 @@
   border-left: 0;
   border-right: 0;
   border-width: 3px;
-  border-image: linear-gradient(to right, red, blue);
-  border-image-slice: 1;
+  border-color: #ffffff;
   background: transparent;
-  border-width: 3px;
+  transition: 1s;
 }
 
 .input:focus {
   outline: none;
   border-width: 3px;
-  border-image-slice: 1;
+  border-color: rgb(0, 114, 129);
 }
 
 .button {

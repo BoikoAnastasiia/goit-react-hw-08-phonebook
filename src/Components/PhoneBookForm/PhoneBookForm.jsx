@@ -3,6 +3,9 @@ import styles from './PhoneBook.module.css';
 import { connect } from 'react-redux';
 import contactsOperations from '../../redux/contacts/contacts-operations';
 import contactsSelectors from '../../redux/contacts/contacts-selectors';
+import AddIcon from '@material-ui/icons/Add';
+
+import Fab from '@material-ui/core/Button';
 
 class PhoneBookForm extends Component {
   state = {
@@ -53,9 +56,13 @@ class PhoneBookForm extends Component {
           title="Номер телефона должен состоять из 11-12 цифр и может содержать цифры, пробелы, тире, пузатые скобки и может начинаться с +"
           required
         />
-        <button type="submit" className={styles.button}>
+        {/* <button type="submit" className={styles.button}>
           Add
-        </button>
+        </button> */}
+
+        <Fab type="submit" color="#ffffff" aria-label="add">
+          <AddIcon />
+        </Fab>
       </form>
     );
   }

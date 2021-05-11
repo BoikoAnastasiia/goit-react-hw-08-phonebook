@@ -3,11 +3,12 @@ import { connect } from 'react-redux';
 import propTypes from 'prop-types';
 import contactsSelectors from '../../redux/contacts/contacts-selectors';
 import { changeFilter } from '../../redux/contacts/contacts-actions';
+import SearchIcon from '@material-ui/icons/Search';
 
 const Search = ({ value, onChange }) => (
   <div className={styles.container}>
     <label className={styles.label}>
-      Phone book search
+      <SearchIcon color="inherit" />
       <input
         type="text"
         value={value}
