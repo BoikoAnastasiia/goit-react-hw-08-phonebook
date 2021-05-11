@@ -2,28 +2,16 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { authSelectors, authOperations } from '../../redux/auth';
 import defaultAvatar from './default-avatar.jpg';
-
-const styles = {
-  container: {
-    display: 'flex',
-    alignItems: 'center',
-  },
-  avatar: {
-    marginRight: 4,
-  },
-  name: {
-    fontWeight: 700,
-    marginRight: 12,
-  },
-};
+import Button from '@material-ui/core/Button';
+import styles from './user-menu.module.css';
 
 const UserMenu = ({ avatar, name, onLogout }) => (
-  <div style={styles.container}>
-    <img src={avatar} alt="" width="32" style={styles.avatar} />
-    <span style={styles.name}>{name}</span>
-    <button type="button" onClick={onLogout}>
+  <div className={styles.userMenuWrapper}>
+    <img src={avatar} alt={name} width="32" className={styles.userMenuAvatar} />
+    <span className={styles.name}>{name}</span>
+    <Button variant="outlined" color="white" onClick={onLogout}>
       Logout
-    </button>
+    </Button>
   </div>
 );
 const mapStateToProps = state => ({

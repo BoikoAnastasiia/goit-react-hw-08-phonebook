@@ -1,11 +1,16 @@
 import { Component } from 'react';
 import { connect } from 'react-redux';
-import Container from '../Components/Container';
 import PhoneBookForm from '../Components/PhoneBookForm';
 import Search from '../Components/Search';
 import ContactsList from '../Components/ContactsList';
 
 import { contactsOperations, contactsSelectors } from '../redux/contacts';
+
+const containerView = {
+  marginLeft: 'auto',
+  marginRight: 'auto',
+  width: 600,
+};
 
 class ContactView extends Component {
   componentDidMount() {
@@ -14,11 +19,11 @@ class ContactView extends Component {
 
   render() {
     return (
-      <Container>
+      <div style={containerView}>
         <PhoneBookForm />
         <Search />
         <ContactsList />
-      </Container>
+      </div>
     );
   }
 }
