@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/goit-react-hw-08-phonebook/static/css/main.392ed20d.chunk.css",
+    "main.js": "/goit-react-hw-08-phonebook/static/js/main.ba3fd22c.chunk.js",
+    "main.js.map": "/goit-react-hw-08-phonebook/static/js/main.ba3fd22c.chunk.js.map",
+    "runtime-main.js": "/goit-react-hw-08-phonebook/static/js/runtime-main.9eb72436.js",
+    "runtime-main.js.map": "/goit-react-hw-08-phonebook/static/js/runtime-main.9eb72436.js.map",
+    "static/js/2.bd5bfe71.chunk.js": "/goit-react-hw-08-phonebook/static/js/2.bd5bfe71.chunk.js",
+    "static/js/2.bd5bfe71.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/2.bd5bfe71.chunk.js.map",
+    "static/css/3.b86a1207.chunk.css": "/goit-react-hw-08-phonebook/static/css/3.b86a1207.chunk.css",
+    "static/js/3.3c656c40.chunk.js": "/goit-react-hw-08-phonebook/static/js/3.3c656c40.chunk.js",
+    "static/js/3.3c656c40.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/3.3c656c40.chunk.js.map",
+    "static/js/4.02799f2a.chunk.js": "/goit-react-hw-08-phonebook/static/js/4.02799f2a.chunk.js",
+    "static/js/4.02799f2a.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/4.02799f2a.chunk.js.map",
+    "static/js/5.1a9984e2.chunk.js": "/goit-react-hw-08-phonebook/static/js/5.1a9984e2.chunk.js",
+    "static/js/5.1a9984e2.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/5.1a9984e2.chunk.js.map",
+    "static/js/6.821163c1.chunk.js": "/goit-react-hw-08-phonebook/static/js/6.821163c1.chunk.js",
+    "static/js/6.821163c1.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/6.821163c1.chunk.js.map",
+    "index.html": "/goit-react-hw-08-phonebook/index.html",
+    "static/css/3.b86a1207.chunk.css.map": "/goit-react-hw-08-phonebook/static/css/3.b86a1207.chunk.css.map",
+    "static/css/main.392ed20d.chunk.css.map": "/goit-react-hw-08-phonebook/static/css/main.392ed20d.chunk.css.map",
+    "static/js/2.bd5bfe71.chunk.js.LICENSE.txt": "/goit-react-hw-08-phonebook/static/js/2.bd5bfe71.chunk.js.LICENSE.txt",
+    "static/media/default-avatar.ec148682.jpg": "/goit-react-hw-08-phonebook/static/media/default-avatar.ec148682.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9eb72436.js",
+    "static/js/2.bd5bfe71.chunk.js",
+    "static/css/main.392ed20d.chunk.css",
+    "static/js/main.ba3fd22c.chunk.js"
+  ]
+}
